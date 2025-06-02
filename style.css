@@ -1,0 +1,69 @@
+/* styles.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #fff8f0; /* Light Peach/Cream */
+}
+
+header {
+  background: #b22222; /* Firebrick Red */
+  color: #fff; /* White */
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #8b0000; /* Dark Red */
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white; /* White */
+  padding: 1rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #a52a2a; /* Brown/Indian Red */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.card {
+  background-color: #fff; /* White */
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light Gray Shadow */
+}
+
+.card h2 {
+  color: #b22222; /* Firebrick Red */
+}
+
+footer {
+  background: #b22222; /* Firebrick Red */
+  color: #fff; /* White */
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  header, nav, footer {
+    text-align: center;
+  }
+}
